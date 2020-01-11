@@ -12,7 +12,7 @@ public class FlightTest {
     public void before() {
         plane1 = new Plane(PlaneType.DREAMLINER);
         passenger1 = new Passenger("Jon", 1);
-        flight = new Flight(plane1, "EZ123", "EDI", "VAN", "14:00");
+        flight = new Flight(plane1, "EZ123", "VAN", "EDI", "14:00");
     }
 
     @Test
@@ -25,12 +25,12 @@ public class FlightTest {
         assertEquals("EZ123", flight.getFlightNo());
 
     }
-//
-//    @Test
-//    public void canGetDepartureAirport() {
-//        assertEquals("EDI", flight.getDepartureAirport());
-//
-//    }
+
+    @Test
+    public void canGetDepartureAirport() {
+        assertEquals("EDI", flight.getDepartureAirport());
+
+    }
 //
 //    @Test
 //    public void canGetDestination() {
