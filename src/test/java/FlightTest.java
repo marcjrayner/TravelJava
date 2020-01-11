@@ -23,25 +23,26 @@ public class FlightTest {
     @Test
     public void canGetFlightNo() {
         assertEquals("EZ123", flight.getFlightNo());
-
     }
 
     @Test
     public void canGetDepartureAirport() {
         assertEquals("EDI", flight.getDepartureAirport());
-
     }
 
     @Test
     public void canGetDestination() {
         assertEquals("VAN", flight.getDestination());
-
     }
 
     @Test
     public void canGetDepartureTime() {
         assertEquals("14:00", flight.getDepartureTime());
+    }
 
+    @Test
+    public void canGetAvailableSeats() {
+        assertEquals(450, flight.getAvailableSeats());
     }
 
 }

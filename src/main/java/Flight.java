@@ -14,6 +14,7 @@ public class Flight {
         this.destination = destination;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
+        this.passengers = new ArrayList<Passenger>();
     }
 
 
@@ -35,5 +36,14 @@ public class Flight {
 
     public String getDepartureTime() {
         return this.departureTime;
+    }
+
+    public int getAvailableSeats() {
+        int noOfPassengers = this.passengers.size();
+        if (noOfPassengers > 0) {
+            return this.plane.getCapacity() - noOfPassengers;
+        } else {
+            return this.plane.getCapacity();
+        }
     }
 }
