@@ -13,4 +13,8 @@ public class Passenger {
     public String getName() {
         return this.name;
     }
+
+    public int getNumOfBags() {
+        return this.numOfBags;
+    }
 }
