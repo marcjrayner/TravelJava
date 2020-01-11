@@ -28,4 +28,8 @@ public class Flight {
     public String getDepartureAirport() {
         return this.departureAirport;
     }
+
+    public String getDestination() {
+        return this.destination;
+    }
 }

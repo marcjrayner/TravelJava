@@ -31,12 +31,12 @@ public class FlightTest {
         assertEquals("EDI", flight.getDepartureAirport());
 
     }
-//
-//    @Test
-//    public void canGetDestination() {
-//        assertEquals("VAN", flight.getDestination());
-//
-//    }
+
+    @Test
+    public void canGetDestination() {
+        assertEquals("VAN", flight.getDestination());
+
+    }
 //
 //    @Test
 //    public void canGetDepartureTime() {
