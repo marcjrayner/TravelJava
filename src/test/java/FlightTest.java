@@ -37,11 +37,11 @@ public class FlightTest {
         assertEquals("VAN", flight.getDestination());
 
     }
-//
-//    @Test
-//    public void canGetDepartureTime() {
-//        assertEquals("14:00", flight.getDepartureTime());
-//
-//    }
+
+    @Test
+    public void canGetDepartureTime() {
+        assertEquals("14:00", flight.getDepartureTime());
+
+    }
 
 }
