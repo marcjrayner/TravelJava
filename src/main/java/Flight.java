@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Flight {
     private Plane plane;
@@ -6,9 +7,9 @@ public class Flight {
     private String flightNo;
     private String destination;
     private String departureAirport;
-    private String departureTime;
+    private Date departureTime;
 
-    public Flight(Plane plane, String flightNo, String destination, String departureAirport, String departureTime) {
+    public Flight(Plane plane, String flightNo, String destination, String departureAirport, Date departureTime) {
         this.plane = plane;
         this.flightNo = flightNo;
         this.destination = destination;
@@ -34,7 +35,7 @@ public class Flight {
         return this.destination;
     }
 
-    public String getDepartureTime() {
+    public Date getDepartureTime() {
         return this.departureTime;
     }
 
