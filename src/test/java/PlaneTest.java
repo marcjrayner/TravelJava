@@ -24,4 +24,9 @@ public class PlaneTest {
         assertEquals(450, plane2.getCapacity());
     }
 
+    @Test
+    public void canGetPlaneMaxWeight() {
+        assertEquals(15000, plane1.getMaxWeight());
+    }
+
 }
