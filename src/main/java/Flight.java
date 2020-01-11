@@ -38,6 +38,10 @@ public class Flight {
         return this.departureTime;
     }
 
+    public ArrayList<Passenger> getPassengers() {
+        return new ArrayList<Passenger>(this.passengers);
+    }
+
     public int getAvailableSeats() {
         int noOfPassengers = this.passengers.size();
         if (noOfPassengers > 0) {

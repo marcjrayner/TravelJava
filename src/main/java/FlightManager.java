@@ -10,4 +10,8 @@ public class FlightManager {
         double amountOfWeightReservedPerPassenger = totalWeightReservedForBags / (double)this.flight.getPlane().getCapacity();
         return (int)Math.floor(amountOfWeightReservedPerPassenger);
     }
+
+//    public int calculateBookedBaggageWeight() {
+//        return this.fli
+//    }
 }
