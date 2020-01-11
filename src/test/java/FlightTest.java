@@ -14,7 +14,7 @@ public class FlightTest {
     public void before() {
         plane1 = new Plane(PlaneType.DREAMLINER);
         passenger1 = new Passenger("Jon", 1);
-        flight = new Flight(plane1, "EZ123", "VAN", "EDI", new Date(1593867600));
+        flight = new Flight(plane1, "EZ123", "VAN", "EDI", new Date(1593867600000L));
     }
 
     @Test
@@ -39,7 +39,7 @@ public class FlightTest {
 
     @Test
     public void canGetDepartureTime() {
-        assertEquals("14:00", flight.getDepartureTime());
+        assertEquals("Sat Jul 04 14:00:00 BST 2020", flight.getDepartureTime());
     }
 
     @Test

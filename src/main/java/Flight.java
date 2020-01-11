@@ -35,8 +35,8 @@ public class Flight {
         return this.destination;
     }
 
-    public Date getDepartureTime() {
-        return this.departureTime;
+    public String getDepartureTime() {
+        return this.departureTime.toString();
     }
 
     public ArrayList<Passenger> getPassengers() {
