@@ -19,12 +19,12 @@ public class FlightTest {
     public void canGetPlane() {
         assertEquals(plane1, flight.getPlane());
     }
-//
-//    @Test
-//    public void canGetFlightNo() {
-//        assertEquals("EZ123", flight.getFlightNo());
-//
-//    }
+
+    @Test
+    public void canGetFlightNo() {
+        assertEquals("EZ123", flight.getFlightNo());
+
+    }
 //
 //    @Test
 //    public void canGetDepartureAirport() {

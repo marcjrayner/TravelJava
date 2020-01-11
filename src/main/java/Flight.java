@@ -20,4 +20,8 @@ public class Flight {
     public Plane getPlane() {
         return this.plane;
     }
+
+    public String getFlightNo() {
+        return this.flightNo;
+    }
 }
