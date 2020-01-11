@@ -15,7 +15,7 @@ public class PlaneTest {
 
     @Test
     public void canGetPlaneType() {
-        assertEquals(PlaneType.DREAMLINER, plane1.getPlaneType());
+        assertEquals(PlaneType.DREAMLINER, plane2.getPlaneType());
     }
 
 }
