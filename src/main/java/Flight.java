@@ -46,4 +46,8 @@ public class Flight {
             return this.plane.getCapacity();
         }
     }
+
+    public void bookPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
 }
